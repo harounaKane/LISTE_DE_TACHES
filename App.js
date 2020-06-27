@@ -3,6 +3,8 @@ import Header from './Components/Header';
 
 export default class App extends React.Component {
   render () {
-    return <Header />;
+    // <Header /> => components customs
+    // titre_header => props (proprétés)
+    return <Header titre_header="Liste de tâches" />;
   }
 }
