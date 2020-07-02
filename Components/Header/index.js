@@ -1,10 +1,15 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, View} from 'react-native';
+import {styles} from './style';
 
-const Header = props => <Text>{props.titre_header}</Text>;
+const Header = props => (
+  <View>
+    {/* component View pour créer des conteneurs */}
+    <View style={styles.subHeader} />
+    <View>
+      <Text>{props.titre_header}</Text>
+    </View>
+  </View>
+);
 
-// destructuration.
-/* 
-const Header = ({titre_header}) => <Text>{titre_header}</Text>; 
-*/
 export default Header;
